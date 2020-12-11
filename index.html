@@ -1,114 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <mete http-equiv="x-UA-Compatible" content="ie=edge">
-            <title>Projectz</title>
-            <link rel="stylesheet" href="assets/css/main.css"> 
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            
-            <!-- Latest compiled and minified CSS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-            <script src="https://kit.fontawesome.com/ac4e28c720.js" crossorigin="anonymous"></script>
-        </head>
+        <script src="js/app.js"></script>
     </head>
     <body>
-        <!-- <div class="container">
-            <h2>Simple Collapsible</h2>
-            <p>Click on the button to toggle between showing and hiding content.</p>
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-            <div id="demo" class="collapse">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-        </div>
-        <div class="container">
-            <h2>Simple Collapsible</h2>
-            <a href="#demo" class="btn btn-info" data-toggle="collapse">Simple collapsible</a>
-            <div id="demo" class="collapse">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-          </div>
-          <div class="container">
-            <h2>Simple Collapsible</h2>
-            <p>Click on the button to toggle between showing and hiding content.</p>
-            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
-            <div id="demo" class="collapse in">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </div>
-          </div>
-          <div class="container">
-            <h2>Collapsible Panel</h2>
-            <p>Click on the collapsible panel to open and close it.</p>
-            <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
-                  </h4>
-                </div>
-                <div id="collapse1" class="panel-collapse collapse">
-                  <div class="panel-body">Panel Body</div>
-                  <div class="panel-footer">Panel Footer</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h1>
-              My dear vicky 
-            </h1>
-            <div>
-              <button type="submit" class="btn btn-info" data-toggle="collapse" data-target="#p" style="background-color: brown;"> big man</button>
-              <div id="p" class="collapse">
-                <p>what is ya problem</p>
-              </div>
-            </div>
-          </div>
-          
-            <img src="assets/img/bg.png"   class="img-circle" alt="jjj" width="200px" height="200px
-            " > -->
-          javascript -->
-              <script type="text/javascript">
-             var x = "am a good boy \"he said to me\"";
-             var y = " thats why i can't eat shit";
-
-              document.write (x + y);
-
-              </script>
-              <script type="text/javascript">
-                function ak(){
-                   alert("ooooops!!!")
-                }
-   
-                 </script>
-                 <form>
-                  <input type="button" value="bad"
-              onclick="ak()">
-               
-                 </form>
-                </script>
-                <script type="text/javascript">
-                  function a(y){
-                     alert("ooooops!!!" +y)
-                  }
-                  a("are you kk")
-     
-                    </script>
-              <button type="button"
-              onclick="document.getElementById('demo').innerHTML = date()">
-               time and date
-            </button>
+        <h3>Data Types</h3>
+        <h3>Inner HTML</h3>
+        <hr>
+        <p id="demo">
+            Is Akanimo in Enugu?
+        </p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Yes, I saw him a few minutes ago";'>Are you sure?   </button>
         
+        <h3>Change Image</h3>
+        <hr>
+        <div>
+            <button type="button" onclick='document.getElementById("switch").src = "img/on.gif";'>Turn on the bulb</button>
+
+            <img src="img/off.gif" id="switch" alt="">
+
+            <button type="button" onclick='document.getElementById("switch").src = "img/off.gif";'>Turn off the bulb</button>
+        </div>
+
+        <h3>Show Element</h3>
+        <hr>
+
+        <div>            
+            <p id="font" style="display: none;">
+                Is Akanimo in Enugu?
+            </p>
+            <button type="button" onclick='document.getElementById("font").style.display = "block";'>Change font size </button>
+        </div>
+
+        <h3>The script tag </h3>
+        <hr>
+        <p id="script"></p>
+
+        <h3>Function ()</h3>
+        <hr>
+        <p id="direction"></p>
+        <button type="button" onclick="directionManual()">Click to get a direction</button>
+
+
+        <br><br><br><br><br><br><br>
+
+        <ul>
+            <li>Strings</li>
+            <li>Numbers/Integer</li>
+            <li>Boolean</li>
+            <li>Float</li>
+            <li>Double</li>
+        </ul>
+        <p>Let's assume that the below is the grade chart for Comp Department of UNIUYO</p>
+        <table>
+            <tr>
+                <th>S/N</th>
+                <th>Grade</th>
+                <th>Margin</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>F</td>
+                <td> < 45 </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>D</td>
+                <td> >= 45 </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>C</td>
+                <td> >= 50 </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>B</td>
+                <td> >= 60 </td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>A</td>
+                <td> >= 70 </td>
+            </tr>
+        </table>
     </body>
-
-
 </html>
